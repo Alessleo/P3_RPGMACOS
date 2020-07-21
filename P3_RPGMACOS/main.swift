@@ -8,5 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
+player1Creation()
+character1Creation()
+player2Creation()
+character1Creation()
 
+print(player2.numberOfCharacter)
+print(player1.numberOfCharacter)
