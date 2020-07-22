@@ -14,7 +14,7 @@ enum Weapon: String {
     
     func weaponDamage() -> Int {
         switch self {
-        case .axe: return 12
+        case .axe: return 60
         case .sword: return 12
         case .mace: return 12
         case .maul: return 20

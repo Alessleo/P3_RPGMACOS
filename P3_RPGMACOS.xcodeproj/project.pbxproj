@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C7AEC1024C8763B0071877F /* Turns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AEC0F24C8763B0071877F /* Turns.swift */; };
+		8C7AEC1224C876750071877F /* Attack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AEC1124C876750071877F /* Attack.swift */; };
+		8C7AEC1424C8767E0071877F /* Heal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AEC1324C8767E0071877F /* Heal.swift */; };
 		8CC2A38A24C5E50E00237A94 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2A38924C5E50E00237A94 /* main.swift */; };
 		8CC2A39124C5E55800237A94 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2A39024C5E55800237A94 /* Game.swift */; };
 		8CC2A39324C5E56400237A94 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2A39224C5E56400237A94 /* Player.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C7AEC0F24C8763B0071877F /* Turns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turns.swift; sourceTree = "<group>"; };
+		8C7AEC1124C876750071877F /* Attack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attack.swift; sourceTree = "<group>"; };
+		8C7AEC1324C8767E0071877F /* Heal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heal.swift; sourceTree = "<group>"; };
 		8CC2A38624C5E50E00237A94 /* P3_RPGMACOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = P3_RPGMACOS; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC2A38924C5E50E00237A94 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8CC2A39024C5E55800237A94 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -67,8 +73,11 @@
 			children = (
 				8CC2A38924C5E50E00237A94 /* main.swift */,
 				8CC2A39024C5E55800237A94 /* Game.swift */,
+				8C7AEC1124C876750071877F /* Attack.swift */,
+				8C7AEC1324C8767E0071877F /* Heal.swift */,
 				8CC2A39224C5E56400237A94 /* Player.swift */,
 				8CC2A39424C5E56D00237A94 /* Character.swift */,
+				8C7AEC0F24C8763B0071877F /* Turns.swift */,
 				8CC2A39624C5E57600237A94 /* Weapon.swift */,
 			);
 			path = P3_RPGMACOS;
@@ -135,8 +144,11 @@
 				8CC2A39724C5E57600237A94 /* Weapon.swift in Sources */,
 				8CC2A38A24C5E50E00237A94 /* main.swift in Sources */,
 				8CC2A39324C5E56400237A94 /* Player.swift in Sources */,
+				8C7AEC1224C876750071877F /* Attack.swift in Sources */,
 				8CC2A39124C5E55800237A94 /* Game.swift in Sources */,
+				8C7AEC1024C8763B0071877F /* Turns.swift in Sources */,
 				8CC2A39524C5E56D00237A94 /* Character.swift in Sources */,
+				8C7AEC1424C8767E0071877F /* Heal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
