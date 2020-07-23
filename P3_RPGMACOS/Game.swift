@@ -33,7 +33,7 @@ func gamePlay() {
     if player2.numberOfCharacter == 0 {
         print("Player 1: \(player1.playerName) WIN")
         lifeStatus()
-        print(rpgGame.numberOfTurns)
+        print("The game has ended in \(rpgGame.numberOfTurns) turns")
         rpgGame.gameIsOver = true
         
     }
@@ -42,7 +42,7 @@ func gamePlay() {
         if player1.numberOfCharacter == 0 {
             print("Player 2 : \(player2.playerName) win")
             lifeStatus()
-            print("The game has ended in \(rpgGame.numberOfTurns)")
+            print("The game has ended in \(rpgGame.numberOfTurns) turns")
             rpgGame.gameIsOver = true
             
         }

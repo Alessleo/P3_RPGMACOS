@@ -8,19 +8,20 @@
 
 import Foundation
 
+var resetTurn = false
 
 func player1Turn() {
     print("\(player1.playerName) turn"
-        + "\r1. Attack"
-        + "\r2. Heal")
-    if let turnChoice = readLine() {
-        switch turnChoice {
-        case "1":  attackPlayer1()
-        case "2": healPlayer1()
-        default: print("A choice muste be done...")
-        player1Turn()
-        }
-    }
+         + "\r1. Attack"
+         + "\r2. Heal")
+     if let turnChoice = readLine() {
+           switch turnChoice {
+           case "1": attackPlayer1()
+           case "2": healPlayer1()
+           default: print("A choice muste be done...")
+           player1Turn()
+           }
+       }
     rpgGame.numberOfTurns += 1
 }
 
@@ -32,7 +33,7 @@ func player2Turn() {
     if let turnChoice = readLine() {
         switch turnChoice {
         case "1": attackPlayer2()
-        case "2": print("Choose your ally")
+        case "2": healPlayer2()
         default: print("A choice muste be done...")
         player2Turn()
         }
@@ -43,6 +44,4 @@ func player2Turn() {
 
 
 
-func choicePlayer1() {
-    
-}
+

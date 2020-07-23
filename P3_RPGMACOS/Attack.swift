@@ -11,19 +11,30 @@ import Foundation
 func attackPlayer1() {
     print("Choose your fighter...")
     chooseAttackerPlayer1()
+     if resetTurn == false {
     print("Choose your opponent...")
     chooseOpponentPlayer1()
-    
-}
+     }
+      else {
+          player1Turn()
+      }
+  }
+
 
 func attackPlayer2() {
     print("Choose your fighter...")
     chooseAttackerPlayer2()
+    if resetTurn == false {
     print("Choose your opponent...")
     chooseOpponentPlayer2()
+    }
+    else {
+        player1Turn()
+    }
 }
 
 func chooseAttackerPlayer1() {
+    resetTurn = false
     print("1. \(player1Character1.characterStatusName) \(player1Character1.characterLife) HP"
         + "\r2. \(player1Character2.characterStatusName) \(player1Character2.characterLife) HP"
         + "\r3. \(player1Character3.characterStatusName) \(player1Character3.characterLife) HP"
@@ -59,7 +70,8 @@ func chooseAttackerPlayer1() {
             print("\(player1Character3.characterName) is dead, choose an other fighter !")
             chooseAttackerPlayer1()
             }
-        case "4": player1Turn()
+        case "4": resetTurn = true
+                   
         default: print("You need to choose a fighter or go back!")
         chooseAttackerPlayer1()
         }
@@ -233,3 +245,4 @@ func chooseOpponentPlayer2() {
         }
     }
 }
+
