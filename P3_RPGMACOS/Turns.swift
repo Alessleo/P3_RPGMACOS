@@ -8,9 +8,12 @@
 
 import Foundation
 
-var resetTurn = false
+var resetAttack = false
+var resetHeal = false
 
 func player1Turn() {
+    resetAttack = false
+    resetHeal = false
     print("\(player1.playerName) turn"
          + "\r1. Attack"
          + "\r2. Heal")
@@ -27,6 +30,8 @@ func player1Turn() {
 
 
 func player2Turn() {
+    resetAttack = false
+    resetHeal = false
     print("\(player2.playerName) turn"
         + "\r1. Attack"
         + "\r2. Heal")

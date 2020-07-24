@@ -11,7 +11,7 @@ import Foundation
 func attackPlayer1() {
     print("Choose your fighter...")
     chooseAttackerPlayer1()
-     if resetTurn == false {
+     if resetAttack == false {
     print("Choose your opponent...")
     chooseOpponentPlayer1()
      }
@@ -24,17 +24,17 @@ func attackPlayer1() {
 func attackPlayer2() {
     print("Choose your fighter...")
     chooseAttackerPlayer2()
-    if resetTurn == false {
+    if resetAttack == false {
     print("Choose your opponent...")
     chooseOpponentPlayer2()
     }
     else {
-        player1Turn()
+        player2Turn()
     }
 }
 
 func chooseAttackerPlayer1() {
-    resetTurn = false
+    resetAttack = false
     print("1. \(player1Character1.characterStatusName) \(player1Character1.characterLife) HP"
         + "\r2. \(player1Character2.characterStatusName) \(player1Character2.characterLife) HP"
         + "\r3. \(player1Character3.characterStatusName) \(player1Character3.characterLife) HP"
@@ -47,6 +47,7 @@ func chooseAttackerPlayer1() {
             print("You choosed \(player1Character1.characterName)")
             selectedAttacker.characterName = player1Character1.characterName
             selectedAttacker.characterWeapon = player1Character1.characterWeapon
+            chest()
         }
         else {
             print("\(player1Character1.characterName) is dead, choose an other fighter !")
@@ -56,6 +57,7 @@ func chooseAttackerPlayer1() {
             print("You choosed \(player1Character2.characterName)")
             selectedAttacker.characterName = player1Character2.characterName
             selectedAttacker.characterWeapon = player1Character2.characterWeapon
+             chest()
         }
         else {
             print("\(player1Character2.characterName) is dead, choose an other fighter !")
@@ -65,12 +67,13 @@ func chooseAttackerPlayer1() {
             print("You choosed \(player1Character3.characterName)")
             selectedAttacker.characterName = player1Character3.characterName
             selectedAttacker.characterWeapon = player1Character3.characterWeapon
+             chest()
         }
         else {
             print("\(player1Character3.characterName) is dead, choose an other fighter !")
             chooseAttackerPlayer1()
             }
-        case "4": resetTurn = true
+        case "4": resetAttack = true
                    
         default: print("You need to choose a fighter or go back!")
         chooseAttackerPlayer1()
@@ -154,6 +157,7 @@ func chooseAttackerPlayer2() {
             print("You choosed \(player2Character1.characterName)")
             selectedAttacker.characterName = player2Character1.characterName
             selectedAttacker.characterWeapon = player2Character1.characterWeapon
+             chest()
         }
         else {
             print("\(player2Character1.characterName) is dead, choose an other fighter !")
@@ -163,6 +167,7 @@ func chooseAttackerPlayer2() {
             print("You choosed \(player2Character2.characterName)")
             selectedAttacker.characterName = player2Character2.characterName
             selectedAttacker.characterWeapon = player2Character2.characterWeapon
+             chest()
         }
         else {
             print("\(player2Character2.characterName) is dead, choose an other fighter !")
@@ -172,12 +177,13 @@ func chooseAttackerPlayer2() {
             print("You choosed \(player2Character3.characterName)")
             selectedAttacker.characterName = player2Character3.characterName
             selectedAttacker.characterWeapon = player2Character3.characterWeapon
+             chest()
         }
         else {
             print("\(player2Character3.characterName) is dead, choose an other fighter !")
             chooseAttackerPlayer2()
             }
-        case "4": player2Turn()
+        case "4": resetAttack = true
         default: print("You need to choose a fighter or go back!")
         chooseAttackerPlayer2()
         }
